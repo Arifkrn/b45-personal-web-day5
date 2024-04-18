@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./assets/img/dumbways-logo.png" alt="logo-brand">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li class="active">
+                    <a href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+    <form action="">
+        <h2>ADD MY PROJECT</h2>
+        <div class="projectName">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" required>
+        </div>
+        <div class="wrap-date">
+            <div class="startDate">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="endDate">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+            </div>
+        </div>
+        <div class="description">
+            <label for="description">Description</label>
+            <textarea name="" id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="technology" id="technology">
+            <label for="">Technology</label>
+            <div class="wrap-technology">
+                <input type="checkbox" name="mycheckbox" id="mycheckbox1" value="nodejs">
+                <label for="nodejs">Node Js</label>
+                <input type="checkbox" name="mycheckbox" id="mycheckbox2" value="nextjs">
+                <label for="nextjs">Next Js</label>
+            </div>
+            <div class="technology-wrap">
+                <input type="checkbox" name="mycheckbox" id="mycheckbox3" value="reactjs">
+                <label for="reactjs">React Js</label>
+                <input type="checkbox" name="mycheckbox" id="mycheckbox4" value="typescript">
+                <label for="typescript">TypeScript</label>
+            </div>
+        </div>
+        <div class="uploadImage">
+            <label for="image">Upload Image</label>
+            <div>
+                <input type="file" id="input-image" required>
+            </div>
+        </div>
+        <div class="btnSubmit">
+            <button type="input" onclick="addProject(event)">Submit</button>
+        </div>
+    </form>
+    <div class="wrap-project" id="wrap-project"></div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
